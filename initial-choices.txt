@@ -1,0 +1,35 @@
+some choices that went into the first version.
+
+based on my current code whhat are the decisons unresolved?
+    from just experiementing a bit its a hassle to to first construct
+the scalar field by first first construction the chart and then manifold.
+to much work. i need a better and easier way to mess with
+        scalar fields
+        vector fields and so on ie not friendly interface
+the sage manifolds library has optimizations, parallel programming.
+because some computations are expensive.
+so for the tensor stuff need to use mutable arrays.
+take a look at the ocaml paper. now the ocaml book binds the ocaml
+library to c. i can maybe target c code and maybe this is a good way
+to apply optimizations. dont know. but needs to fast.
+
+in order to get something up and running quickly i covered trivial
+cases. you can see my code and the sage code. the sage code is
+worthy of a library.
+    so you must generalize the any dimension
+    you need a proper way to organize your library
+
+you need to apply low level to haskell.
+
+when you constructing data what are you allocating?
+need to think in terms pf bytes etc. by using this you will
+improve performance.
+
+another decision i made was to just go from mathexp to dual number. but
+i didnt add a way to display the expression and i need to go from
+expression to expression as well.
+
+    
+also, the structure of the subset of diff geometry doesnt reflect
+with how its described.
+        so you would need to build some vector space library
